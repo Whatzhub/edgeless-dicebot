@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edgeless Dice Bot</title>
+
+    <link rel="stylesheet" href="lib/pure-min.css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+    <p class="underline">
+        <img src="images/dice-white.png" height="20" width="40">
+        <b>Edgeless Dice Bot v1.0.0</b>
+    </p>
+
+    <div class="is-success" id="is-success" hidden>Replace this text with your own SUCCESS text.</div>
+    <div class="is-error" id="is-error" hidden>You need to fill in the correct ranges for all the required fields.</div>
+
+    <form id="botInputForm" class="pure-form pure-form-stacked">
+
+        <fieldset>
+
+            <div class="pure-g">
+
+                <div class="pure-u-1-3">
+                    <label for="initialWager">Initial Wager</label>
+                    <input id="initialWager" class="pure-u-23-24" type="number" step="0.01" value="0.01" min="0.01" max="100" placeholder="range 0.01 - 100, +/- 0.01" required>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <label for="winProb">Win Probability</label>
+                    <input id="winProb" class="pure-u-23-24" type="number" step="1" value="15" min="1" max="99" placeholder="range 1 - 99, +/- 1" required>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <label for="stopBank">Stop Bank</label>
+                    <input id="stopBank" class="pure-u-23-24" type="number" step="0.01" value="100" placeholder="range 1 - 10000, +/- 0.01" required>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <label for="steps">Steps</label>
+                    <input id="steps" class="pure-u-23-24" type="number" step="1" value="1" min="1" max="100" placeholder="range 1 - 100, +/- 1" required>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <label for="resetSteps">Reset Step</label>
+                    <input id="resetSteps" class="pure-u-23-24" type="number" step="1" value="1" min="1" max="100" placeholder="range 1 - 100, +/- 1" required>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <label for="resetMultiplier">Reset Multipler</label>
+                    <input id="resetMultiplier" class="pure-u-23-24" type="number" step="1" value="1" min="1" max="100" placeholder="range 1 - 100, +/- 1" required>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <label for="winStreak">Win Streak</label>
+                    <input id="winStreak" class="pure-u-23-24" type="text" readonly>
+                </div>
+
+                <div class="pure-u-1-3">
+                        <label for="lossStreak">Loss Streak</label>
+                        <input id="lossStreak" class="pure-u-23-24" type="text" readonly>
+                    </div>
+
+                <div class="pure-u-1-3">
+                    <label for="totalBets">Total Bets</label>
+                    <input id="totalBets" class="pure-u-23-24" type="text" readonly>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <label for="profit">Profit</label>
+                    <input id="profit" class="pure-u-23-24" type="text" readonly>
+                </div>
+
+                <div class="pure-u-1-3">
+                    <label for="bank">Bank</label>
+                    <input id="bank" class="pure-u-23-24" type="text" readonly>
+                </div>
+            </div>
+
+            <div class="pt-10">
+                <button type="submit" id="runBot" class="pure-button pure-button-primary">Run Bot</button>
+                <button id="stopBot" class="pure-button pure-button-error pure-button-danger" disabled>Stop Bot</button>
+            </div>
+
+        </fieldset>
+    </form>
+
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <canvas id="canvas1"></canvas>
+        </div>
+        <div class="pure-u-1">
+            <canvas id="canvas2"></canvas>
+        </div>
+    </div>
+
+    <script src="lib/chart.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

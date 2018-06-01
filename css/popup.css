@@ -1,0 +1,44 @@
+body {
+    background-image: url("../images/cool-background.png");
+    background-size: cover;
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.1;
+    font-size: 12px;
+    min-width: 500px;
+    height: 100%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+::-webkit-scrollbar-button {
+    display: none !important;
+}
+
+canvas{
+    width: 500px !important;
+    height: 140px !important;
+  }
+  
+/* Error Dialogs */
+.is-success, .is-error {
+    margin: 10px 0px;
+    padding: 12px;
+ 
+}
+.is-success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.is-error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+}
+
+.pt-10 {padding-top: 10px;}
+.underline {text-decoration: underline;}
