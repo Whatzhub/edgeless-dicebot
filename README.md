@@ -1,5 +1,4 @@
-![Stephen Hawking](https://github.com/Whatzhub/edgeless-dicebot/master/images/dice-quote-hawking.jpg "The Quote")
--Stephen Hawking
+![Stephen Hawking](https://github.com/Whatzhub/edgeless-dicebot/raw/master/images/dice-quote-hawking.jpg "The Quote")
 
 ##  edgeless-dicebot v1
 This is a chrome extension that provides various betting enhancements for Edgeless' Dice Game.
@@ -25,12 +24,12 @@ This is a chrome extension that provides various betting enhancements for Edgele
 
 ## Usage
 You are required to input the following fields before running the bot:
-- **initial wager => the amount (EDG) for your first bet
-- **win probability => the probability (%) to win
-- **stop bank => the bankroll amount reached for stopping
-- **steps => the number of losing streaks allowed before stopping your betting strategy
-- **reset step => the number of losing streaks before resetting to another betting amount
-- **reset multiplier => the number your bet will be multiplied by  
+- **initial wager** => the amount (EDG) for your first bet
+- **win probability** => the probability (%) to win
+- **stop bank** => the bankroll amount reached for stopping
+- **steps** => the number of losing streaks allowed before stopping your betting strategy
+- **reset step** => the number of losing streaks before resetting to another betting amount
+- **reset multiplier** => the number your bet will be multiplied by  
 
 ## Final
 If this helped you in any way, you can always leave me a tip at 
