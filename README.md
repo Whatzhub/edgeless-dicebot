@@ -6,7 +6,6 @@ This is a chrome extension that provides various betting enhancements for Edgele
 
 ## Features
 - Enhances the automated betting feature by allowing multiple steps [martingale betting strategy](https://en.wikipedia.org/wiki/Martingale_(betting_system)) directly from the Chrome browser.
-- Enables users to perform  (Martingale betting strategy including separate persistent starting balance customizable multiplier, stop loss, and odds calculator
 - Customisable initial bet, win probability, stop bank, steps, reset step, reset multiplier
 - Real-time display for win/ loss streak, total bets, profit, and bank
 - Real-time Bankroll & Losses Distribution chart
